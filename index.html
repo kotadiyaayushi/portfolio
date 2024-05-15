@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <div class="logo"><span class="a11">A</span>YUSHI.</div>
+                <div id="sidemenu">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+
+                    
+
+                </ul>
+                </div>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Ayushi</span> Kotadiya <br>From Amreli</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ayushi.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p class="p">I am ayushi kotadiya.
+                        I know programming languages such as C, C++, HTML, CSS and Javascript. I can help you achieve your goals with customized solutions tailored to your specific needs. Contact me to discuss how we can take your project to the next level.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DSA in C++</span><br>Coding</li><br>
+                            <li><span>Web Devlopment</span><br>Web devlopment by using Html,css and javascript</li><br>
+                            <!-- <li><span>App Devlopment</span><br>Building Android/ios apps</li><br> -->
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Current</span><br>Engineering at CHARUSAT University.</li><br>
+                            <!-- <li><span>2021-2023</span><br>Team lead at StarApp LLC.</li><br>
+                            <li><span>2019-2021</span><br>Ui/Ux Design Executive at coin Digital Ltd.</li><br>
+                            <li><span>2017-2019</span><br>internship at ekart eCommerce.</li><br> -->
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>10th Complete</li><br>
+                            <li><span>2023</span><br>12th Complete</li><br>
+                            <li><span>2027</span><br>B.Tech IT will be complete in 2027</li><br>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">
+                My Services
+            </h1>
+
+            <div class="services-list">
+
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I design visually engaging and user-friendly websites that align with your brand's vision. Let's take your online presence to the next level.</p>
+                    <a href="">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Development</h2>
+                    <p>I develop websites that are fast, secure, and easy to navigate. Let me create a custom solution for your online needs.</p>
+                    <a href="">Learn more</a>
+                </div>
+
+                <!-- <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2> Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia voluptate ducimus magni harum a
+                        reprehenderit?</p>
+                    <a href="">Learn more</a>
+                </div> -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">
+                My Work
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Food Ordering Website</h3>
+                        <p>This is a one-of-a-kind food ordering website.
+                        This website is for promotion and food ordering of Grilli Restaurant.</p>
+                        <a href="https://kotadiyaayushi.github.io/ayushikk/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>University Website</h3>
+                        <p>This is my first website that I made using Html, CSS and Javascript.
+                            I have created this website using basic Javascript.
+                            It is completely responsive.
+                            I made this website to promote my university.</p>
+                        <a href="https://kotadiyaayushi.github.io/mu/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>It's About Me.</p>
+                        <a href="https://kotadiyaayushi.github.io/portfolio/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>kotadiyaayushi36@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9408652353</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ayushi-kotadiya-480aa2297/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download="" class="btn btn2">Download CV</a>
+
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input  type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Meggage" cols="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn b">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab");
+
+
+
+            //for show/hide menu--------------
+
+
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemeu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemeu.style.right = "-200px";
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>
